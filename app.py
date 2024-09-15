@@ -18,6 +18,9 @@ import logging
 import os
 
 app = Flask(__name__)
+@app.route('/health', methods=['GET'])
+def health_check():
+    return "App is running!", 200
 app.config.update(
     MAX_TRAINS=10,
     MAX_MINUTES=30,
