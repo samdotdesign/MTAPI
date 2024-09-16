@@ -1,10 +1,10 @@
 .venv
 *.sublime-*
-settings.cfg
 stops.txt
 transfers.txt
 *.log
 *.pyc
+__pycache__/
 .cache
 .DS_Store
-.vercel
+.vercel/
