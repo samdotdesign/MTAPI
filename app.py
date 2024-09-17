@@ -90,11 +90,11 @@ def add_cors_header(resp):
 @app.route('/')
 @response_wrapper
 def index():
+    print("Root route accessed")
     return {
-        print("Root route accessed")
         'title': 'MTAPI',
         'readme': 'Visit https://github.com/jonthornton/MTAPI for more info'
-        }
+    }
 
 @app.route('/by-location', methods=['GET'])
 @response_wrapper
