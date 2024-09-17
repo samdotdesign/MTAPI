@@ -91,6 +91,7 @@ def add_cors_header(resp):
 @response_wrapper
 def index():
     return {
+        print("Root route accessed")
         'title': 'MTAPI',
         'readme': 'Visit https://github.com/jonthornton/MTAPI for more info'
         }
@@ -175,4 +176,4 @@ def _make_envelope(data):
     }
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000, use_reloader=False)
+    app.run(host='0.0.0.0', port=8000)
